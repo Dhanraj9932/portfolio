@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: black;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vb;
+    background-image: url(wallpaperflare.com_wallpaper\ \(7\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    margin-left: 900px;
+    padding-left: 100px 10%;
+  
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    margin-left: -800px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+.header-text p{
+    font-size: 40px ;
+}
+.header-text h1 span{
+    color: red;
+}
+
+#About{
+    padding: 20px 0;
+    
+    margin-left: -850px;
+    
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.About-col-1 img{
+    padding-left: 0;
+    width: 90%;
+    height: 450px;
+    border-radius: 15px;
+   
+    
+}
+
+.About-col-1 span{
+    color:#4677d4 ;
+}
+.About-col-2{
+
+    padding-left: 0;
+    margin-right: 834px;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.About-col-2 span{
+    color:#4677d4 ;
+}
+
+.About-col-3{
+    margin-left: 700px;
+    margin-top: -550px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s ;
+
+}
+.tab-links.active-link::after{
+    width: 50px;
+}
+.tab-contents ul li{
+    list-style: none;
+}
+
+* {box-sizing:border-box}
+
+.container-1 {
+    width: 300px; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 0.5px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+
+.skills.java{
+    width: 90%; background-color: #04AA6D;
+}
+.skills.c{
+    width: 90%; background-color: #c90a14;
+}
+.skills.php{
+    width: 70%; background-color: #e609e6;
+}
+.skills.sql{
+    width: 80%; background-color: #e69109;
+}
+.skills.html{
+    width: 85%; background-color: #4fe609;
+}
+.skills.css{
+    width: 90%; background-color: #2196F3;
+}
+.skills.javascript{
+    width: 70%; background-color: Grey;
+}
+.skills.react{
+    width: 60%; background-color: red;
+}
+
+.tab-contents ul li span{
+    color: #4677d4;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*------------------------project-----------------*/
+#Projects{
+    margin-top: 100px;
+    padding: 30px 0 0;
+    margin-left: -850px;
+    
+
+    
+    
+}
+.sub-title{
+    margin-left: 550px;
+    
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list img{
+    width: 80%;
+    height: 200px;
+}
+.project-list div{
+    background: #262626;
+    padding: 30px;
+    width: 90%;
+    height: 400px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    background: red;
+    transform: translateY(-10px);
+
+}
+/*-----------------certificate--------------------*/
+#Certificate{
+    margin-top: 300px;
+    padding: 50px 0;
+    margin-left: -850px;
+    color: #fff;
+    background: black;
+   
+}
+.Certificate-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 150px;
+    margin-top: 50px;
+}
+.Certificate-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 320px;
+    height: 300px;
+    transition: background 0.5s,transform 0.5s;
+}
+.Certificate-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.Certificate-list div h2{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.Certificate-list div a{
+    text-decoration: none;
+     padding-top: 15px;
+     font-size: 15px;
+}
+
+.Certificate-list div:hover{
+    background: #ff004f;
+    transform: translateY(-15px);
+}
+
+   
+
+.contact-left{
+    margin-top: 60px;
+    margin-left: -800px;
+}
+.contact-left h1{
+    
+   margin-left: 500px;
+   margin-top: 30px;
+}
+.contact-left div{
+    margin-top: 80px;
+}
+.contact-right img{
+    margin-top: -320px;
+    margin-left: -250px;
+    width: 700px;
+    height: 500px;
+}
+.contact-left p i{
+    color: #ff004f;
+    font-size: 15px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+   
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color: #ababab;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-10px);
+}
+
+.btn.btn2{
+    width: 150px;
+    height: 35px;
+    
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    background: #ff004f;
+    text-align:center ;
+    padding: 10px 20px;
+}
+.sub-title span{
+   color: #4677d4 ;
+}
+/*-----------------------css for small screens----------*/
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    
+    #header{
+        width: 1100px;
+        height: 100vb;
+        background-image: url(wallpaperflare.com_wallpaper\ \(7\).jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 12px;
+        
+    }
+    .header-text h1{
+        margin-top: 100px;
+        margin-left: -40px;
+        font-size: 18px;
+    }
+    .header-text p{
+       
+        margin-top: 10px;
+        margin-left: -40px;
+        font-size: 18px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        
+    }
+    
+    
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav div i{
+        color: black;
+        margin-left: -40px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .About-col-1 img{
+        margin-left: -40px;
+        width: 350px;
+        height: 500px;
+        border-radius: 15px;
+    }
+    .About-col-1 h1{
+        margin-left: -35px;
+        font-size: 18px;
+    }
+    .About-col-1 h5{
+        margin-left: -35px;
+        font-size: 13px;
+    }
+    .About-col-2{
+        font-size: 13px;
+        margin-left: -35px;
+    }
+    .About-col-3{
+        margin-top: -350px;
+        font-size: 10px;
+    }
+    .tab-titles{
+        margin-left: -270px;
+        margin-top: -390px;
+        
+    }
+    .tab-titles p{
+        font-size: 18px;
+    }
+    .tab-contents{
+        margin-left: -270px;
+    }
+    .tab-contents ul li{
+        font-size: 13px;
+        
+        margin-right: -100px;
+        
+    }
+    .container-1 {
+        width: 200px; /* Full width */
+        background-color: #ddd; /* Grey background */
+      }
+    
+      .skills {
+        text-align: right; /* Right-align text */
+        padding-top: 0.5px; /* Add top padding */
+        padding-bottom: 5px; /* Add bottom padding */
+        color: white; /* White text color */
+      }
+    .sub-title{
+        margin-left: 0;
+        
+    }
+    .project-list{
+        width: 500px;
+        height: 300px;
+        
+    }
+    
+    .contact-right img{
+        margin-top: -390px;
+        margin-left: -400px;
+        width: 600px;
+        height: 500px;
+    }
+    .contact-left h1{
+        margin-left: 0;
+    }
+    #Certificate .sub-title{
+        margin-top: 1000px;
+    }
+    
+    .Certificate-list{
+        margin-top: 100px;
+        padding-left: 100px;
+    }
+}
